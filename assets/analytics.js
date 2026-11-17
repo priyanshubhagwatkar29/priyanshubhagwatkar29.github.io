@@ -33,7 +33,18 @@
   }
 
   function loadAnalytics() {
-    if (analyticsLoaded) return;
+    if (analyticsLoaded) {
+      if (typeof window.gtag === "function") {
+        window.gtag("consent", "update", {
+          analytics_storage: "granted",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied"
+        });
+      }
+      if (typeof window.clarity === "function") window.clarity("consent", true);
+      return;
+    }
     analyticsLoaded = true;
 
     // Google Analytics 4
@@ -71,7 +82,7 @@
   }
 
   function track(name, params) {
-    if (!analyticsLoaded || typeof window.gtag !== "function") return;
+    if (!analyticsLoaded || getConsent() !== "accept" || typeof window.gtag !== "function") return;
     window.gtag("event", name, Object.assign({
       page_path: location.pathname,
       page_title: document.title
@@ -166,6 +177,16 @@
       if (choice === "accept") {
         loadAnalytics();
         installInteractionTracking();
+      } else {
+        if (typeof window.gtag === "function") {
+          window.gtag("consent", "update", {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied"
+          });
+        }
+        if (typeof window.clarity === "function") window.clarity("consent", false);
       }
     });
   }
