@@ -153,7 +153,7 @@
     banner = document.createElement("section");
     banner.id = "pb-analytics-consent";
     banner.setAttribute("role", "dialog");
-    banner.setAttribute("aria-label", "Analytics and privacy preferences");
+    banner.setAttribute("aria-label", "Cookie preferences");
     banner.setAttribute("aria-live", "polite");
     banner.innerHTML = `
       <div class="pb-consent-card">
@@ -162,8 +162,8 @@
           <p>This website can use Google Analytics to measure visits and clicks, and Microsoft Clarity to understand page interactions through heatmaps and session recordings. These optional tools load only if you accept. You can reject them or change your choice later.</p>
         </div>
         <div class="pb-consent-actions">
-          <button type="button" data-consent="reject" class="pb-consent-secondary">Reject</button>
-          <button type="button" data-consent="accept" class="pb-consent-primary">Accept analytics</button>
+          <button type="button" data-consent="reject" class="pb-consent-secondary">Reject cookies</button>
+          <button type="button" data-consent="accept" class="pb-consent-primary">Accept cookies</button>
         </div>
       </div>`;
     document.body.appendChild(banner);
@@ -196,8 +196,8 @@
     const button = document.createElement("button");
     button.id = "pb-privacy-settings";
     button.type = "button";
-    button.textContent = "Privacy";
-    button.setAttribute("aria-label", "Open privacy preferences");
+    button.textContent = "Cookie settings";
+    button.setAttribute("aria-label", "Open cookie settings");
     button.addEventListener("click", showBanner);
     document.body.appendChild(button);
   }
