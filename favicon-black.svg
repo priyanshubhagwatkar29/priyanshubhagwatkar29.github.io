@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="P monogram"><rect x="4" y="4" width="120" height="120" fill="none" stroke="#111111" stroke-width="4"/><text x="64" y="98" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="104" font-weight="700" fill="#111111">P</text><text x="14" y="27" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#111111">29</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Priyanshu periodic table tile">
+  <rect x="14" y="14" width="484" height="484" fill="none" stroke="#111111" stroke-width="10"/>
+  <text x="48" y="94" font-family="Times New Roman, Times, serif" font-size="58" font-weight="400" fill="#111111">29</text>
+  <text x="256" y="408" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="390" font-weight="700" fill="#111111">P</text>
+  <text x="466" y="474" text-anchor="end" font-family="Times New Roman, Times, serif" font-size="48" font-weight="400" letter-spacing="-0.6" fill="#111111">Priyanshu</text>
+</svg>
