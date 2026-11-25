@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Priyanshu periodic table tile">
-  <rect x="14" y="14" width="484" height="484" fill="none" stroke="#111111" stroke-width="10"/>
-  <text x="48" y="94" font-family="Times New Roman, Times, serif" font-size="58" font-weight="400" fill="#111111">29</text>
-  <text x="256" y="408" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="390" font-weight="700" fill="#111111">P</text>
-  <text x="466" y="474" text-anchor="end" font-family="Times New Roman, Times, serif" font-size="48" font-weight="400" letter-spacing="-0.6" fill="#111111">Priyanshu</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="29 P Priyanshu">
+  <rect x="16" y="16" width="480" height="480" fill="none" stroke="#111111" stroke-width="10"/>
+  <text x="52" y="103" font-family="Times New Roman, Times, serif" font-size="58" font-weight="400" fill="#111111">29</text>
+  <text x="256" y="421" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="376" font-weight="700" fill="#111111">P</text>
+  <text x="466" y="476" text-anchor="end" font-family="Times New Roman, Times, serif" font-size="44" font-weight="400" letter-spacing="-0.5" fill="#111111">Priyanshu</text>
 </svg>
